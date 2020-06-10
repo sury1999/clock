@@ -1,0 +1,16 @@
+  body {
+    background-color: blue;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+  }
+
+.clock {
+  width:30rem;
+  height:30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+}
