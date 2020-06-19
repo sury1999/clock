@@ -2,11 +2,14 @@
     background-color: blue;
     background-size: cover;
     display: flex;
-    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
+    box-sizing: border-box;
+
   }
 
 .clock {
@@ -14,9 +17,33 @@
   height:300px;
   background-color: pink;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 5px solid black;
   position: relative;
 }
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  color: red;
+}
+
+.clock .number1 {--rotation: 30deg; }
+.clock .number2 {--rotation: 60deg; }
+.clock .number3 {--rotation: 90deg; }
+.clock .number4 {--rotation: 120deg; }
+.clock .number5 {--rotation: 150deg; }
+.clock .number6 {--rotation: 180deg; }
+.clock .number7 {--rotation: 210deg; }
+.clock .number8 {--rotation: 240deg; }
+.clock .number9 {--rotation: 270deg; }
+.clock .number10 {--rotation: 300deg; }
+.clock .number11 {--rotation: 330deg; }
+
+
 
 .clock .hand {
   --rotation : 0;
@@ -47,4 +74,167 @@
   width: 10px;
   height: 35%;
   background-color: red;
+}
+
+.clock2 {
+  width:300px;
+  height:300px;
+  background-color: black;
+  border-radius: 15%;
+  border: 2px solid white;
+  position: relative;
+  margin: 10px;
+}
+
+.clock2 .number2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.clock2  .time1 {
+  top: 20px;
+  left: 80px;
+}
+.clock2 .time2 {
+  left: 120px;
+  top: 85px;
+}
+.clock2 .time3 {
+  left: 120px;
+  top: 150px;
+}
+.clock2 .time4 {
+  left: 120px;
+  top: 215px;
+}
+.clock2 .time5 {
+  left: 80px;
+  top: 270px;
+}
+.clock2 .time6 {
+  left: 0px;
+  top: 270px;
+}
+.clock2 .time7 {
+  left: -80px;
+  top: 270px;
+}
+.clock2 .time8 {
+  left: -120px;
+  top: 215px;
+}
+.clock2 .time9 {
+  left: -120px;
+  top: 150px;
+}
+.clock2 .time10 {
+  left: -120px;
+  top: 85px;
+}
+.clock2 .time11 {
+  top: 20px;
+  left: -80px;
+}
+.clock2 .time12 {
+   top: 20px;
+   left: 0px;
+}
+
+.clock2 .minutes {
+  --rot: 0;
+  position: absolute;
+  text-align: center;
+  margin-top: 37.5px;
+  margin-left: 37.5px;
+  width: 75%;
+  height: 75%;
+  color: blue;
+  font-size: 15px;
+  transform: rotate(var(--rot));
+}
+
+.clock2 .minutes0 {--rot: 0deg;}
+.clock2 .minutes1 {--rot: 6deg;}
+.clock2 .minutes2 {--rot: 12deg;}
+.clock2 .minutes3 {--rot: 18deg;}
+.clock2 .minutes4 {--rot: 24deg;}
+.clock2 .minutes5 {--rot: 30deg;}
+.clock2 .minutes6 {--rot: 36deg;}
+.clock2 .minutes7 {--rot: 42deg;}
+.clock2 .minutes8 {--rot: 48deg;}
+.clock2 .minutes9 {--rot: 54deg;}
+.clock2 .minutes10 {--rot: 60deg;}
+.clock2 .minutes11 {--rot: 66deg;}
+.clock2 .minutes12 {--rot: 72deg;}
+.clock2 .minutes13 {--rot: 78deg;}
+.clock2 .minutes14 {--rot: 84deg;}
+.clock2 .minutes15 {--rot: 90deg;}
+.clock2 .minutes16 {--rot: 96deg;}
+.clock2 .minutes17 {--rot: 102deg;}
+.clock2 .minutes18 {--rot: 108deg;}
+.clock2 .minutes19 {--rot: 114deg;}
+.clock2 .minutes20 {--rot: 120deg;}
+.clock2 .minutes21 {--rot: 126deg;}
+.clock2 .minutes22 {--rot: 132deg;}
+.clock2 .minutes23 {--rot: 138deg;}
+.clock2 .minutes24 {--rot: 144deg;}
+.clock2 .minutes25 {--rot: 150deg;}
+.clock2 .minutes26 {--rot: 156deg;}
+.clock2 .minutes27 {--rot: 162deg;}
+.clock2 .minutes28 {--rot: 168deg;}
+.clock2 .minutes29 {--rot: 174deg;}
+.clock2 .minutes30 {--rot: 180deg;}
+.clock2 .minutes31 {--rot: 186deg;}
+.clock2 .minutes32 {--rot: 192deg;}
+.clock2 .minutes33 {--rot: 198deg;}
+.clock2 .minutes34 {--rot: 204deg;}
+.clock2 .minutes35 {--rot: 210deg;}
+.clock2 .minutes36 {--rot: 216deg;}
+.clock2 .minutes37 {--rot: 222deg;}
+.clock2 .minutes38 {--rot: 228deg;}
+.clock2 .minutes39 {--rot: 234deg;}
+.clock2 .minutes40 {--rot: 240deg;}
+.clock2 .minutes41 {--rot: 246deg;}
+.clock2 .minutes42 {--rot: 252deg;}
+.clock2 .minutes43 {--rot: 258deg;}
+.clock2 .minutes44 {--rot: 264deg;}
+.clock2 .minutes45 {--rot: 270deg;}
+.clock2 .minutes46 {--rot: 276deg;}
+.clock2 .minutes47 {--rot: 282deg;}
+.clock2 .minutes48 {--rot: 288deg;}
+.clock2 .minutes49 {--rot: 294deg;}
+.clock2 .minutes50 {--rot: 300deg;}
+.clock2 .minutes51 {--rot: 306deg;}
+.clock2 .minutes52 {--rot: 312deg;}
+.clock2 .minutes53 {--rot: 318deg;}
+.clock2 .minutes54 {--rot: 324deg;}
+.clock2 .minutes55 {--rot: 330deg;}
+.clock2 .minutes56 {--rot: 336deg;}
+.clock2 .minutes57 {--rot: 342deg;}
+.clock2 .minutes58 {--rot: 348deg;}
+.clock2 .minutes59 {--rot: 354deg;}
+
+.clock2 .hand2 {
+  --rotation : 0;
+  position: absolute;
+  bottom: 50%;
+  left:50%;
+  transform-origin: bottom;
+  border: .5px solid grey;
+  transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
+}
+
+.clock2 .hand2.hour2 {
+  width: 90px;
+  height: 19%;
+  margin-bottom: 90px;
+  background: linear-gradient(to left, white, white, white, gold, white, white, white);
+  border-radius: 50%;
+
 }
