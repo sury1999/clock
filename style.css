@@ -9,7 +9,7 @@
     min-height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
-
+    --col: green;
   }
 
 .clock {
@@ -80,13 +80,14 @@
   width:300px;
   height:300px;
   background-color: black;
-  border-radius: 15%;
+  border-radius: 50%;
   border: 2px solid white;
   position: relative;
   margin: 10px;
 }
 
 .clock2 .number2 {
+  --rothour: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -94,60 +95,25 @@
   color: black;
   font-weight: bold;
   font-size: 20px;
+    transform: rotate(var(--rothour));
 }
 
+.clock2 .time1 {--rothour: 30deg; }
+.clock2 .time2 {--rothour: 60deg; }
+.clock2 .time3 {--rothour: 90deg; }
+.clock2 .time4 {--rothour: 120deg; }
+.clock2 .time5 {--rothour: 150deg; }
+.clock2 .time6 {--rothour: 180deg; }
+.clock2 .time7 {--rothour: 210deg; }
+.clock2 .time8 {--rothour: 240deg; }
+.clock2 .time9 {--rothour: 270deg; }
+.clock2 .time10 {--rothour: 300deg; }
+.clock2 .time11 {--rothour: 330deg; }
 
-.clock2  .time1 {
-  top: 20px;
-  left: 80px;
-}
-.clock2 .time2 {
-  left: 120px;
-  top: 85px;
-}
-.clock2 .time3 {
-  left: 120px;
-  top: 150px;
-}
-.clock2 .time4 {
-  left: 120px;
-  top: 215px;
-}
-.clock2 .time5 {
-  left: 80px;
-  top: 270px;
-}
-.clock2 .time6 {
-  left: 0px;
-  top: 270px;
-}
-.clock2 .time7 {
-  left: -80px;
-  top: 270px;
-}
-.clock2 .time8 {
-  left: -120px;
-  top: 215px;
-}
-.clock2 .time9 {
-  left: -120px;
-  top: 150px;
-}
-.clock2 .time10 {
-  left: -120px;
-  top: 85px;
-}
-.clock2 .time11 {
-  top: 20px;
-  left: -80px;
-}
-.clock2 .time12 {
-   top: 20px;
-   left: 0px;
-}
 
 .clock2 .minutes {
   --rot: 0;
+  --col: "red";
   position: absolute;
   text-align: center;
   margin-top: 37.5px;
@@ -157,6 +123,8 @@
   color: blue;
   font-size: 15px;
   transform: rotate(var(--rot));
+
+
 }
 
 .clock2 .minutes0 {--rot: 0deg;}
@@ -221,7 +189,7 @@
 .clock2 .minutes59 {--rot: 354deg;}
 
 .clock2 .hand2 {
-  --rotation : 0;
+  --rot : 0;
   position: absolute;
   bottom: 50%;
   left:50%;
@@ -230,11 +198,47 @@
   transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
 }
 
-.clock2 .hand2.hour2 {
+.clock2 .hand-container {
+  position: absolute;
+  top: 0px;
+  left: 120px;
   width: 90px;
-  height: 19%;
-  margin-bottom: 90px;
-  background: linear-gradient(to left, white, white, white, gold, white, white, white);
-  border-radius: 50%;
+  height: 50%;
+}
 
+.clock2 .hand2.hour2 {
+  top:auto;
+  width: 70px;
+  height:70px;
+  background: linear-gradient(grey, white);
+  border-radius: 50%;
+  display: block;
+}
+
+.clock2 .hand2.minute2 {
+  width: 7px;
+  height: 27%;
+  background-color: yellow;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.clock2 .hand2.second2 {
+  width: 10px;
+  height: 15%;
+  background-color: green;
+  margin-bottom: 90px;
+}
+
+
+
+
+@@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
 }
