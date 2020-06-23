@@ -120,12 +120,12 @@
   margin-left: 37.5px;
   width: 75%;
   height: 75%;
-  color: blue;
+  color: black;
   font-size: 15px;
   transform: rotate(var(--rot));
-
-
 }
+
+
 
 .clock2 .minutes0 {--rot: 0deg;}
 .clock2 .minutes1 {--rot: 6deg;}
@@ -194,24 +194,30 @@
   bottom: 50%;
   left:50%;
   transform-origin: bottom;
-  border: .5px solid grey;
   transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
 }
 
 .clock2 .hand-container {
+  --rot : 0;
   position: absolute;
-  top: 0px;
-  left: 120px;
-  width: 90px;
-  height: 50%;
+  bottom: 50%;
+  left:50%;
+  transform-origin: bottom;
+  width: 10px;
+  height: 67px;
+  transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
 }
 
 .clock2 .hand2.hour2 {
   top:auto;
-  width: 70px;
-  height:70px;
-  background: linear-gradient(grey, white);
-  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-top: 40px solid red;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   display: block;
 }
 
@@ -222,23 +228,19 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-
-.clock2 .hand2.second2 {
+.clock2 .second-container {
+  --rot : 0;
+  position: absolute;
+  bottom: 50%;
+  left:50%;
+  transform-origin: bottom;
   width: 10px;
-  height: 15%;
-  background-color: green;
-  margin-bottom: 90px;
+  height: 200px;
+  transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
 }
 
-
-
-
-@@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
+.clock2 .hand2.second2 {
+  width: 12px;
+  height: 10%;
+  background-color: blue;
 }
