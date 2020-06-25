@@ -38,6 +38,14 @@ function setClock2()
   setRotation2 (hourHand2, hoursRatio2);
   setRotation2 (minuteHand2, minutesRatio2);
   setRotation2 (secondHand2, secondsRatio2);
+
+  //trying to colour individual seconds green
+  var seconds = new Date().getSeconds();
+  var y = seconds;
+  document.getElementsByClassName('minutes')[seconds].className = "color-green";
+  // = "<span style = 'color: red;'>y</span>";
+  console.log(document.getElementsByClassName('minutes')[y].innerHTML);
+
 }
 
 function setRotation2(element,rotationRatio2)
@@ -48,5 +56,6 @@ function setRotation2(element,rotationRatio2)
 
 
 setClock2();
+
 
 })

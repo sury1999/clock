@@ -113,7 +113,6 @@
 
 .clock2 .minutes {
   --rot: 0;
-  --col: "red";
   position: absolute;
   text-align: center;
   margin-top: 37.5px;
@@ -125,6 +124,20 @@
   transform: rotate(var(--rot));
 }
 
+.color-green {
+  --rot: 0;
+  position: absolute;
+  text-align: center;
+  margin-top: 37.5px;
+  margin-left: 37.5px;
+  width: 75%;
+  height: 75%;
+  color: green;
+  font-size: 15px;
+  transform: rotate(var(--rot));
+
+
+}
 
 
 .clock2 .minutes0 {--rot: 0deg;}
@@ -210,11 +223,11 @@
 
 .clock2 .hand2.hour2 {
   top:auto;
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-bottom: 35px solid transparent;
   border-top: 40px solid red;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -223,7 +236,7 @@
 
 .clock2 .hand2.minute2 {
   width: 7px;
-  height: 27%;
+  height: 33%;
   background-color: yellow;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -234,8 +247,8 @@
   bottom: 50%;
   left:50%;
   transform-origin: bottom;
-  width: 10px;
-  height: 200px;
+  width: 15px;
+  height: 190px;
   transform: translateX(-50%) rotate(calc(var(--rot) * 1deg));
 }
 
