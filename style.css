@@ -2,7 +2,7 @@
     background-color: blue;
     background-size: cover;
     display: flex;
-    font-family: monospace;
+    font-family: serif;
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@
 }
 
 .clock .hand.second {
-  width: 3px;
+  width: 5px;
   height: 45%;
   background-color: blue;
 }
@@ -124,7 +124,7 @@
   transform: rotate(var(--rot));
 }
 
-.color-green {
+.clock2 .color-green {
   --rot: 0;
   position: absolute;
   text-align: center;
@@ -135,9 +135,8 @@
   color: green;
   font-size: 15px;
   transform: rotate(var(--rot));
-
-
 }
+
 
 
 .clock2 .minutes0 {--rot: 0deg;}
@@ -224,11 +223,11 @@
 .clock2 .hand2.hour2 {
   top:auto;
   height: 40px;
-  width: 40px;
+  width: 50px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 35px solid transparent;
-  border-top: 40px solid red;
+  border-bottom: 40px solid transparent;
+  border-top: 35px solid red;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   display: block;
@@ -236,7 +235,7 @@
 
 .clock2 .hand2.minute2 {
   width: 7px;
-  height: 33%;
+  height: 30%;
   background-color: yellow;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -254,6 +253,6 @@
 
 .clock2 .hand2.second2 {
   width: 12px;
-  height: 10%;
+  height: 9%;
   background-color: blue;
 }
